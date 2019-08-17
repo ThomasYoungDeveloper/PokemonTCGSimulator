@@ -1,0 +1,158 @@
+h1, h2{
+    position: fixed;
+    right:37%;
+    margin-right: 30px;
+    font-size: 100px;
+    color: black;
+    margin: 0;
+    top:10px;
+}
+
+
+
+/* header {
+} */
+
+html { 
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cad4b52e-f6b1-432f-9035-a5f4853bcf15/d7i3cm4-dc9f4577-6b7d-4d59-8b46-a15bf5e84209.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NhZDRiNTJlLWY2YjEtNDMyZi05MDM1LWE1ZjQ4NTNiY2YxNVwvZDdpM2NtNC1kYzlmNDU3Ny02YjdkLTRkNTktOGI0Ni1hMTViZjVlODQyMDkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MAvFmljnNt5yawKRk7Tm-59pAkenmRqY3ZmzVmfsMjI") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Teko', sans-serif;
+} 
+
+#pokemart {
+  position: fixed;
+  top:-20;
+  right:0;
+  margin-right: 30px;
+
+}
+
+.card-container {
+    cursor: pointer;
+    height: 420px;
+    perspective: 600;
+    position: relative;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+  }
+  .card .back {
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+
+  audio {
+    position: fixed;
+    bottom:0;
+    right:0;
+  }
+
+  #modalText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: -60px;
+  }
+
+  #items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+  }
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 45%; /* Could be more or less, depending on screen size */
+  height: 50%;
+  background-image: url("https://i.pinimg.com/originals/4a/b8/a9/4ab8a922224250e3742ddeb4e1857e11.png")
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+#coins {
+  right:37%;
+  margin-right: 30px;
+  height:60px;
+  width:40px;
+  font-size: 30px;
+  color: black;
+  margin: 0;
+  top:10px;
+  background: none;
+  border: solid black 2px;
+  border-radius: 20px;
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAa8wvg5viOMlttXFAjS9L6Qwtfk8R0E5FPuzk7BoBz68fm325fw");
+  font-family: 'Teko', sans-serif;
+}
+
+#buyNowButton {
+  color: black;
+  margin: 10px;
+  top:10px;
+  background: white;
+  border-radius: 5px;
+  border: solid black .5px;
+  margin-left: 308px;
+  width:80px;
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+}
