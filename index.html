@@ -15,24 +15,34 @@
 <body>
     <header>
 
-        <img id="pokeball" src="https://apk-dl.com/detail/image/com.r0adkll.deckbuilder-w250.png" width="100px" height="100px" onclick="openPack();"/>
-
+        <img id="pokeball" src="https://purepng.com/public/uploads/large/purepng.com-pokeballpokeballdevicepokemon-ballpokemon-capture-ball-17015278258617bdog.png" width="100px" height="100px" onclick="openPack();"/>
+        <button id='cardAmount'>Cards Left</button>
         <img id = "pokemart" src="pokemart.png" width="100px" height="100px"/>
+        <img id = "pokemon-center" src="pokemon center.png" width="100px" height="100px" onclick="pokemonCenterButton();"/>
+
         <h1>Pokemon TCG</h1>
         
         
     </header>
+    <div id='space'></div>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <button id = "coins">¥</button>
                 <p id="modalText">Hi There! May I help you?</p>
                 <div id='items'><img id = "pokemonBooster" src="pokemon-base-set.jpg" width="80px" height="160px"/>  <br>        </div>
-                <button id= "buyNowButton" onclick="buyPack();">BUY</button>
+                <button id= "buyNowButton" onclick="buyPack();">¥20</button>
 
               </div>
         </div>
-    
+  
+        <div id="PokemonCenterModal" class="modal">
+            <div class="PokemonCenterModal-content">
+                <span class="close">&times;</span>
+                <p id="PokemonModalText">Coming soon...</p>
+              </div>
+        </div>
+    <container></container>
     <audio controls="controls"><source src="Cianwood-City.mp3" type="audio/mpeg" /></audio>
 <!--<div class="card-container">
   <div class="card">

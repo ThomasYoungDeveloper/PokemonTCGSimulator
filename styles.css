@@ -7,12 +7,10 @@ h1, h2{
     margin: 0;
     top:10px;
 }
-
-
-
-/* header {
-} */
-
+#space {
+  width: 100%;
+  height: 130px;
+}
 html { 
     background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cad4b52e-f6b1-432f-9035-a5f4853bcf15/d7i3cm4-dc9f4577-6b7d-4d59-8b46-a15bf5e84209.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NhZDRiNTJlLWY2YjEtNDMyZi05MDM1LWE1ZjQ4NTNiY2YxNVwvZDdpM2NtNC1kYzlmNDU3Ny02YjdkLTRkNTktOGI0Ni1hMTViZjVlODQyMDkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MAvFmljnNt5yawKRk7Tm-59pAkenmRqY3ZmzVmfsMjI") no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -30,7 +28,37 @@ html {
 
 }
 
-.card-container {
+#pokemon-center {
+  position: fixed;
+  top:-20;
+  left:0;
+  margin-left: 30px;
+}
+
+#pokeball {
+  position: fixed;
+  margin-top:-20;
+  left:0;
+  margin-left: 142px;;
+
+}
+
+#cardAmount {
+  border: solid black 3px;
+  border-radius:7px;
+  width: 50px;
+  height:70px;
+  position: fixed;
+  margin-top:15px ;
+  left:0;
+  margin-left: 260px;
+  color: black;
+  font-size: 15px;
+  padding: 1px 0px 2px 0px;
+
+}
+
+/* .card-container {
     cursor: pointer;
     height: 420px;
     perspective: 600;
@@ -62,7 +90,7 @@ html {
     line-height: 150px;
     text-align: center;
     transform: rotateY(180deg);
-  }
+  } */
 
   audio {
     position: fixed;
@@ -111,6 +139,16 @@ html {
   background-image: url("https://i.pinimg.com/originals/4a/b8/a9/4ab8a922224250e3742ddeb4e1857e11.png")
 }
 
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 45%; /* Could be more or less, depending on screen size */
+  height: 50%;
+  background-image: url("https://i.pinimg.com/originals/4a/b8/a9/4ab8a922224250e3742ddeb4e1857e11.png")
+}
 /* The Close Button */
 .close {
   color: #aaa;
@@ -151,8 +189,9 @@ html {
   background: white;
   border-radius: 5px;
   border: solid black .5px;
-  margin-left: 308px;
+  margin-left: 285px;
   width:80px;
+  height:35px;
   font-family: 'Teko', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }

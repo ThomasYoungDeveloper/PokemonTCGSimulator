@@ -114,9 +114,13 @@ var ultraRare = [
 const addCoins = () => {
     coinAmount = document.getElementById("coins");
     coinAmount.innerHTML = coins;
-    coins++
-      
+    coins++  
     }
+
+
+
+    
+
 const coinTimer = () => {
     window.setInterval(addCoins, 3000);
   
@@ -157,11 +161,13 @@ const show_image = (src, width, height, alt) => {
 }
 
 const openPack = () => {
+    document.getElementById('cardAmount').innerHTML = cardAmount;
     if (cardAmount != 0) {
         for (let i = 0; i < 11; i++) {
             randomNumber = Math.floor(Math.random() * 100)
             probs();
             cardAmount--
+
             console.log(cardAmount)
             break;
         }
@@ -175,6 +181,7 @@ const openPack = () => {
 const buyPack = () => {
     if (coins >= 20) {
         coins -= 20;
+        document.getElementById("cardAmount")
         cardAmount += 12
     } else {
         alert("You do not have enough money. Why dont you wait and come back later.")
@@ -205,7 +212,7 @@ const probs = () => {
         pokemonCardUltraRare()
         dance.play();
         confetti({
-            particleCount: 5000,
+            particleCount: 2000,
             angle: 60,
             spread: 55,
             origin: {
@@ -213,7 +220,7 @@ const probs = () => {
             },
           });
           confetti({
-            particleCount: 5000,
+            particleCount: 2000,
             angle: 120,
             spread: 55,
             origin: {
@@ -225,8 +232,6 @@ const probs = () => {
 
 }
 
-    
-
 coinTimer();
 openButton = document.getElementById('open-pack')
 
@@ -235,6 +240,7 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("pokemart");
+document.getElementById("pokemonCenterModal")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -243,6 +249,11 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
+
+pokemonCenterButton = () => {
+    alert("Coming soon..");
+}
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -255,3 +266,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
